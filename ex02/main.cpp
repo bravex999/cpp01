@@ -12,8 +12,8 @@ std::cout << "Address held by stringPTR: " << stringPTR << std::endl;
 std::cout << "Address held by stringREF: " << &stringREF << std::endl;
 
 std::cout << "Value of string variable: " << _string << std::endl;
-std::cout << "Value pointed to be PTR: " << *stringPTR << std::endl;
-std::cout << "Value pointed to be REF: " << stringREF << std::endl;
+std::cout << "Value pointed to by PTR: " << *stringPTR << std::endl;
+std::cout << "Value pointed to by REF: " << stringREF << std::endl;
 return 0;
 }
 
