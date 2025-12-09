@@ -6,7 +6,7 @@ int main(int argc, char **argv)
 {
     if(argc != 4)
     {
-        std::cerr << "You need three parameters";
+        std::cerr << "You need three parameters" << std::endl;
         return 1;
     }    
     Sed _replacer(argv[1]);
