@@ -20,6 +20,12 @@ Sed::~Sed(){}
 
 void Sed::replaceWord(std::string s1, std::string s2)
 {
+    if (s1.empty())
+    {
+        std::cerr << "Error: search string is empty" << std::endl;
+        return;
+    }
+
     std::ifstream infile(_file.c_str());
     if (!infile.is_open())
     {
@@ -32,12 +38,6 @@ void Sed::replaceWord(std::string s1, std::string s2)
     if (!outfile.is_open())
     {
         std::cerr << "Error: cannot create output file" << std::endl;
-        return;
-    }
-
-    if (s1.empty())
-    {
-        std::cerr << "Error: search string is empty" << std::endl;
         return;
     }
 
